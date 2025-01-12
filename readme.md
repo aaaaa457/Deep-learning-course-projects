@@ -1,4 +1,4 @@
-# Implementing Audio-to-Image Generation Based on Diffusion Models
+# Implementing Audio-to-Image Generation Based on Diffusion Model
 
 ## Project Overview
 This project is a deep learning-based system for generating images from audio, aiming to produce images related to the given audio signals.
