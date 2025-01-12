@@ -40,15 +40,15 @@ The generated images are shown in output/imgs folder.
 <table>
   <tr>
     <td>
-      <img src="output/imgs/2hhaxOZmJsY_000694.png" alt="Image 1" style="width:100%;">
+      <img src="output/imgs/2hhaxOZmJsY_000694.png" alt="Image 4" style="width:100%;">
       <p>airplane</p>
     </td>
     <td>
-      <img src="output/imgs/2yb5ojhk8rk_000157.png" alt="Image 2" style="width:100%;">
+      <img src="output/imgs/2yb5ojhk8rk_000157.png" alt="Image 5" style="width:100%;">
       <p>barn swallow calling</p>
     </td>
     <td>
-      <img src="output/imgs/3Qzk1nQ3a7Q_000070.png" alt="Image 3" style="width:100%;">
+      <img src="output/imgs/3Qzk1nQ3a7Q_000070.png" alt="Image 6" style="width:100%;">
       <p>waterfall burbling</p>
     </td>
   </tr>
