@@ -1,17 +1,57 @@
-## 项目的执行步骤
+# Implementing Audio-to-Image Generation Based on Diffusion Models
 
-### 1. 环境准备
-安装库(torchaudio torchvision transformers>=4.25.1 diffusers accelerate ftfy Pillow datasets opencv-python)：执行“library_installation.ipynb”
+## Project Overview
+This project is a deep learning-based system for generating images from audio, aiming to produce images related to the given audio signals.
 
-https://huggingface.co/camenduru/beats/blob/main/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt 下载BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt到models/beats文件夹
+## Environment Setup
+Install libraries: library_installation.ipynb
 
-### 2. 数据集准备
-先从 https://huggingface.co/datasets/Loie/VGGSound 下载VGGSound数据集（含vggsound.csv），做相关处理：执行“data_prepare.ipynb”
+Download from [BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt](https://huggingface.co/camenduru/beats/blob/main/BEATs_iter3_plus_AS2M_finetuned_on_AS2M_cpt2.pt) to the models/beats folder.
 
-生成过滤配置文件（filter_config/optimal_frames_data.json，filter_config/poor_quality_video_list.pkl，filter_config/mismatched_video_pairs.pkl）：执行“filter_files_generate.ipynb”
+## Dataset Preparation
+Download the VGGSound dataset (including vggsound.csv) from [VGGSound](https://huggingface.co/datasets/Loie/VGGSound)，process it: data_prepare.ipynb
+ 
+Generate filter configuration files: filter_files_generate.ipynb
 
-### 3. 训练
-训练出output/VGGSound_features.bin文件保存音频特征的嵌入：执行“train_VGGSound.ipynb”
+## Training
+Train to save audio feature embeddings in output/VGGSound_features.bin: train_VGGSound.ipynb
 
-### 4. 生成图片
-用到稳定扩散模型compvis/stable-diffusion-v1-4（默认路径pretrained_model_name_or_path从Hugging Face官网加载，可在ModelScope魔搭社区下载模型到本地运行）：执行“generate_images.ipynb”
+## Image Generation
+Utilize the stable diffusion model [stable-diffusion-v1-4](https://huggingface.co/CompVis/stable-diffusion-v1-4)  for image generation:
+generate_images.ipynb
+
+<table>
+  <tr>
+    <td>
+      <img src="output/imgs/1L_QllvdK74_000030.png" alt="Image 1" style="width:100%;">
+      <p>car passing by</p>
+    </td>
+    <td>
+      <img src="output/imgs/1MhjSKooAZo_000300.png" alt="Image 2" style="width:100%;">
+      <p>ocean burbling</p>
+    </td>
+    <td>
+      <img src="output/imgs/2a6AytwygrI_000100.png" alt="Image 3" style="width:100%;">
+      <p>playing electronic organ</p>
+    </td>
+  </tr>
+</table>
+<table>
+  <tr>
+    <td>
+      <img src="output/imgs/2hhaxOZmJsY_000694.png" alt="Image 1" style="width:100%;">
+      <p>airplane</p>
+    </td>
+    <td>
+      <img src="output/imgs/2yb5ojhk8rk_000157.png" alt="Image 2" style="width:100%;">
+      <p>barn swallow calling</p>
+    </td>
+    <td>
+      <img src="output/imgs/3Qzk1nQ3a7Q_000070.png" alt="Image 3" style="width:100%;">
+      <p>waterfall burbling</p>
+    </td>
+  </tr>
+</table>
+
+## Reference Code
+[audio-to-image](https://github.com/rishavroy97/audio-to-image/tree/main)
