@@ -20,7 +20,7 @@ Train to save audio feature embeddings in output/VGGSound_features.bin: train_VG
 Utilize the stable diffusion model [stable-diffusion-v1-4](https://huggingface.co/CompVis/stable-diffusion-v1-4)  for image generation:
 generate_images.ipynb
 
-The generated images is shown in output/imgs folder.
+The generated images are shown in output/imgs folder.
 <table>
   <tr>
     <td>
