@@ -16,10 +16,11 @@ Generate filter configuration files: filter_files_generate.ipynb
 ## Training
 Train to save audio feature embeddings in output/VGGSound_features.bin: train_VGGSound.ipynb
 
-## Image Generation
+## Images Generation
 Utilize the stable diffusion model [stable-diffusion-v1-4](https://huggingface.co/CompVis/stable-diffusion-v1-4)  for image generation:
 generate_images.ipynb
 
+The generated images is shown in output/imgs folder.
 <table>
   <tr>
     <td>
@@ -55,3 +56,5 @@ generate_images.ipynb
 
 ## Reference Code
 [audio-to-image](https://github.com/rishavroy97/audio-to-image/tree/main)
+
+[audio-diffusion](https://github.com/teticio/audio-diffusion)
